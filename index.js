@@ -25,3 +25,12 @@ getLocation().then((coords) => {
         map: map
     });
 });
+
+
+function getCenterLocation() {
+    let c = map.getCenter();
+    return {
+        lat: c.lat(),
+        lng: c.lng()
+    }
+}
